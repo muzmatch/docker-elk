@@ -12,6 +12,7 @@ services:
       - --strict.perms=false
     volumes:
       - ./extensions/apm-server/config/apm-server.yml:/usr/share/apm-server/apm-server.yml:ro,Z
+    restart: always
     ports:
       - '8200:8200'
     environment:
