@@ -20,3 +20,8 @@ services:
       - elk
     depends_on:
       - elasticsearch
+
+networks:
+  elk:
+    external: true
+    driver: bridge

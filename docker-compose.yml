@@ -88,6 +88,7 @@ services:
 
 networks:
   elk:
+    external: true
     driver: bridge
 
 volumes:
